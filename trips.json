@@ -1,14 +1,38 @@
 {
     "trips": [
         {
-            "location": "test",
+            "location": "Vancouver",
             "location type": "city",
             "visited": false,
             "reviews": [
                 {
-                    "date": "now",
-                    "text": "I loved it",
-                    "title": "my first trip to test"
+                    "date": "",
+                    "text": "",
+                    "title": "test"
+                }
+            ]
+        },
+        {
+            "location": "Budapest",
+            "location type": "city",
+            "visited": false,
+            "reviews": [
+                {
+                    "date": "",
+                    "text": "",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "location": "Paris",
+            "location type": "city",
+            "visited": false,
+            "reviews": [
+                {
+                    "date": "",
+                    "text": "",
+                    "title": ""
                 }
             ]
         }

@@ -1,0 +1,11 @@
+{{#each this}}
+<div id = tripList key= "{{@key}}"> 
+{{location}}
+{{#each reviews}}
+<span>{{title}}</span><span>{{date}}</span> 
+{{/each}}
+</div>
+<button id="add-review#{{@key}}">Add Review</button>
+
+{{/each}}
+

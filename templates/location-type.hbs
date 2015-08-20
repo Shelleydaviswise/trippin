@@ -1,0 +1,38 @@
+{{#each this}}
+<option value = "{{@index}}"> {{this}} </option>
+{{/each}}
+
+
+
+
+{{!-- 
+{{#each this}}
+<section class="trip-sec" key="{{@key}}">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>{{location}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      {{#if visited === true}}
+      <button type="submit" id = "reviewTrip" class="btn btn-default">Review my Trip</button>
+      {{else}}
+      <button type="submit" id = "delWishlist" class="btn btn-default">Delete from Wishlist</button>
+      <button type="submit" id = "addTrip" class="btn btn-default">Visited</button>
+      {{/if}}
+    </div>
+    <div class="col-sm-9">
+      <p>{{review}}</p>
+    </div>
+  </div> --}}
+  {{!-- 
+I want to code this so that the default view is all trips.  
+When I add a location in the form field, before I click on the "add to list' button, I can choose whether I have visited the location, otherwise it will go directly to the wish list (remove a radio button). After I add the trip, if I have changed the visited value to true, then the trip displays with a review button.  Otherwise it displays with an 'add to visited button'  and a 'delete from wishlist' button. If the 'add to visited' button is clicked (i.e. if "visited": true), the location displays with a review button.
+I want a filter to see either only my visited locations and only my wishlist.
+
+  <button class="btn btn-danger watchToggle">Unwatched</button>
+  <button class="rmv btn btn-default">Hide</button>
+  <button class="del btn btn-danger">Delete</button> --}}
+</section>  
+{{/each}}

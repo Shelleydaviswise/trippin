@@ -11,16 +11,14 @@ requirejs.config({
      "q": "../lib/bower_components/q/q"
  
   },
- 
   shim: {
     "bootstrap": ["jquery"],
     "firebase": {exports: "Firebase"}
   }
 });
 
-requirejs(["dependencies", "load-data"], 
-  function(dependencies, loaddata) {
-   
+requirejs(["dependencies", "load-data", "save-data", "delete-data", "reviews"], 
+  function(dependencies, loadData, saveData, deleteData, addReview) {          
   }
 );
 

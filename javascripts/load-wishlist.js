@@ -6,22 +6,7 @@ define(function(require){
 
   console.log("templates", templates);
 
-// This is the default view of ALL trips taken or no ttaken currently in FB.
-  var myFirebaseRef = new Firebase("https://nss-shelley-trippin.firebaseio.com/");
-
-  myFirebaseRef.child("location_types").on("value", function(snapshot) {
-    var locationTypes = snapshot.val();
-  
-    // This will hold the complete DOM string of trips
-    var populatedTemplate = templates.locTypeTpl(locationTypes);
-    console.log(populatedTemplate);
-
-    // Insert the template into the DOM
-    $("#location-types").html(populatedTemplate);
-
-
-
-  });
+    var myFirebaseRef = new Firebase("https://nss-shelley-trippin.firebaseio.com/");
 
   // Listen for when anything changes on the "trips" key
   myFirebaseRef.child("trips").on("value", function(snapshot) {
