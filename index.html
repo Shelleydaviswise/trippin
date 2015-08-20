@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' type = 'text/css' href='lib/bower_components/bootstrap/dist/css/bootstrap.min.css'>
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
-<link rel = 'stylesheet' type  = 'text/css' href = 'lib/styles/main.css'>
+<link rel = 'stylesheet' type  = 'text/css' href = 'styles/main.css'>
 
 
 <title>Trippin'</title>
@@ -17,20 +17,20 @@
 </header>
   <div class= 'container'>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-xs-6">
         <div id = 'enter-trips'>
           <form>
             <div class="form-group">
               <label for='locationName'>Location Name</label>
-              <input type="text" class="form-control" id="location-name" placeholder="Istanbul">
+              <input type="text" class="form-control" id="location-name" placeholder="Name your place">
             </div>
             <div class="form-group">
               <label for='locationType'>Location Type</label>
-              <select ="text" class="form-control" id="location-types" placeholder="Istanbul"></select>
+              <select ="text" class="form-control" id="location-types" ></select>
             </div>
             <div class="form-group">
               <label for='review'>Review</label>
-              <textarea placeholder = "i loved my visit to Istanbul" class="form-control" id="review" placeholder="Tell about your trip here"></textarea>
+              <textarea placeholder = "Write a review" class="form-control" id="review" placeholder="Tell about your trip here"></textarea>
             </div>
           </form>
           <div class="btn-group" role="group" aria-label="...">
@@ -39,20 +39,27 @@
           </div>
           <br>
           <button type="submit" id = "addTrip" class="btn btn-default">Add to my list</button>
+           <button type="submit" id = "viewWishlist" class="btn btn-default">View Wishlist</button>
+            <button type="submit" id = "viewVisited" class="btn btn-default">View Visited</button>
         </div>
-      </div>    <!-- close colmd-6 -->
-      <div 'list-of-trips' class="col-md-6 showWishlist showVisited">
-        Trip List goes here
+      </div>    <!-- close colxs-6 -->
+      
+      <div  class="col-xs-6">
+          <!-- <div class='row'>
+            <div class ="col-xs-12">
+            </div>
+          </div> -->
+        <div id = 'list-of-trips'>
+        </div>
+        <div class ='reviewText'>
+          <textarea class = 'review-entry'></textarea>
+          <button id ='save-review'> Save Review</button>
+        </div>
       </div>
     </div>
   </div>    
 
-  <div class='reviewText'>
-  <textarea class = 'reviewEntry hidden'></textarea>
-  <button id='save-review'> Save Review</button>
-  </div>
-
-
+  
 
 <script data-main='javascripts/main' src ='lib/bower_components/requirejs/require.js'></script>
 

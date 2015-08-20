@@ -23,8 +23,10 @@ define (function(require){
     newLocation = {
       location: $('#location-name').val(),
       location_type: $('#location-types').val(),
-      visited: visited
+      visited: visited,
+      review: $("#review").val()
     };
+
     console.log('newLocation', newLocation);
 
     $.ajax({
@@ -39,8 +41,11 @@ define (function(require){
      console.log("error", error);
 
    });
-
-
-    
   });
 });
+
+
+
+
+
+

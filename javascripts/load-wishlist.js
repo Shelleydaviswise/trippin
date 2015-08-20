@@ -4,7 +4,11 @@ define(function(require){
   var $ = require("jquery");
 
 
-  console.log("templates", templates);
+  $(document).on ('click', "button('#viewWishlist')",function() {
+    if(visited.val() === true){
+      
+    }
+  });
 
     var myFirebaseRef = new Firebase("https://nss-shelley-trippin.firebaseio.com/");
 

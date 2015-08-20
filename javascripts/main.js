@@ -8,7 +8,8 @@ requirejs.config({
     "hbs": "../lib/bower_components/require-handlebars-plugin/hbs",
     "bootstrap": "../lib/bower_components/bootstrap/dist/js/bootstrap.min",
     "bootstrap-rating": "../lib/bower_components/bootstrap-rating/bootstrap-rating.min",
-     "q": "../lib/bower_components/q/q"
+     "q": "../lib/bower_components/q/q",
+     
  
   },
   shim: {
@@ -17,8 +18,8 @@ requirejs.config({
   }
 });
 
-requirejs(["dependencies", "load-data", "save-data", "delete-data", "reviews"], 
-  function(dependencies, loadData, saveData, deleteData, addReview) {          
+requirejs(["dependencies", "load-data", "save-data", "reviews"], 
+  function(dependencies, loadData, saveData, addReview) {          
   }
 );
 
